@@ -21,7 +21,7 @@ const Navbar = () => {
             >
                <div className="size-10 ">
                 <img 
-                  src="./public/tweety.png" 
+                  src="/tweety.png" 
                   alt="Tweety Logo"
                   className="w-full h-full object-cover"
                 />

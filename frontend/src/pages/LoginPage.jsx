@@ -30,10 +30,7 @@ const TweetyPattern = ({ title, subtitle }) => {
         </div>
       </div>
     );
-  };
-  
-  
-
+};
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({ email: "", password: "" });
@@ -45,11 +42,11 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col lg:flex-row items-center justify-center bg-gray-900 text-white">
+    <div className="h-screen flex flex-col lg:flex-row items-center justify-center bg-white text-gray-800">
       {/* Left Side - Form */}
       <div className="flex flex-col justify-center p-8 w-full max-w-md">
-        <h1 className="text-3xl font-bold text-center mb-4">Sign in to Tweety</h1>
-        <p className="text-gray-400 text-center mb-6">Stay connected with your friends</p>
+        <h1 className="text-3xl font-bold text-center mb-4 text-yellow-600">Sign in to Tweety</h1>
+        <p className="text-gray-600 text-center mb-6">Stay connected with your friends</p>
 
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
@@ -58,7 +55,7 @@ const LoginPage = () => {
               <Mail className="absolute left-3 top-3 text-gray-400" />
               <input
                 type="email"
-                className="input bg-gray-800 border border-gray-700 w-full pl-10 py-2 px-3 rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="input bg-gray-100 border border-gray-300 w-full pl-10 py-2 px-3 rounded-lg focus:ring-2 focus:ring-yellow-500"
                 placeholder="you@example.com"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -72,7 +69,7 @@ const LoginPage = () => {
               <Lock className="absolute left-3 top-3 text-gray-400" />
               <input
                 type={showPassword ? "text" : "password"}
-                className="input bg-gray-800 border border-gray-700 w-full pl-10 py-2 px-3 rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="input bg-gray-100 border border-gray-300 w-full pl-10 py-2 px-3 rounded-lg focus:ring-2 focus:ring-yellow-500"
                 placeholder="••••••••"
                 value={formData.password}
                 onChange={(e) => setFormData({ ...formData, password: e.target.value })}
@@ -89,7 +86,7 @@ const LoginPage = () => {
 
           <button
             type="submit"
-            className="w-full bg-blue-500 hover:bg-blue-600 transition rounded-lg py-2 font-semibold flex items-center justify-center"
+            className="w-full bg-yellow-500 hover:bg-yellow-600 transition rounded-lg py-2 font-semibold flex items-center justify-center"
             disabled={isLoggingIn}
           >
             {isLoggingIn ? (
@@ -102,8 +99,8 @@ const LoginPage = () => {
           </button>
         </form>
 
-        <p className="text-center text-gray-400 mt-4">
-          Don&apos;t have an account? <Link to="/signup" className="text-blue-400 hover:underline">Create account</Link>
+        <p className="text-center text-gray-600 mt-4">
+          Don&apos;t have an account? <Link to="/signup" className="text-yellow-500 hover:underline">Create account</Link>
         </p>
       </div>
 
