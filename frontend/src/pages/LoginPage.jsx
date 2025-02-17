@@ -45,8 +45,8 @@ const LoginPage = () => {
     <div className="h-screen flex flex-col lg:flex-row items-center justify-center bg-white text-gray-800">
       {/* Left Side - Form */}
       <div className="flex flex-col justify-center p-8 w-full max-w-md">
-        <h1 className="text-3xl font-bold text-center mb-4 text-yellow-600">Sign in to Tweety</h1>
-        <p className="text-gray-600 text-center mb-6">Stay connected with your friends</p>
+        <h1 className="text-3xl font-bold text-center mb-4 text-yellow-600">Sign in to Churpyy</h1>
+        <p className="text-gray-600 text-center mb-6">Connect with fellow Amitians, privately and directly - your university network simplified</p>
 
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
@@ -56,7 +56,7 @@ const LoginPage = () => {
               <input
                 type="email"
                 className="input bg-gray-100 border border-gray-300 w-full pl-10 py-2 px-3 rounded-lg focus:ring-2 focus:ring-yellow-500"
-                placeholder="you@example.com"
+                placeholder="you@s.amity.edu"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               />
